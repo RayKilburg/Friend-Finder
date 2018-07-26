@@ -1,27 +1,22 @@
-//body-parser
+// dependencies
 var bodyParser = require('body-parser')
-//express
 var express = require('express')
-var app = express()
+var app = express();
 
- 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
- 
-app.listen(3000)
+// Sets an initial port. We"ll use this later in our listener
+var PORT = process.env.PORT || 8080;
 
-//path
-var npmPath = require('npm-path')
-var PATH = npmPath.PATH // get platform independent PATH key
- 
-npmPath(function(err, $PATH) {
-  
-  // Note: current environment is modified!
-  console.log(process.env[PATH] == $PATH) // true
-  
-  console.log($PATH);
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// router
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
+// listener
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
 });
 
-//
 
