@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Survey Page</title>
@@ -7,161 +8,197 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script> -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+
 </head>
+
 <body>
 
   <div class="container">
 
     <div class="jumbotron">
-      <h1 class="text-center"><span class="fa fa-user"></span> Friend Finder</h1>
+      <h1 class="text-center">
+        <span class="fa fa-user"></span> Friend Finder</h1>
       <hr>
-      <h2 class="text-center"> Find Friends For Free!!!</h2>
+      <h2 class="text-center"></h2>
       <br>
 
       <div class="text-center">
-        <a href="home.html"><button class="btn btn-lg btn-primary"><span class="fa fa-home"></span> Home</button></a>
+        <a href="home.html">
+          <button class="btn btn-lg btn-primary">
+            <span class="fa fa-home"></span> Home</button>
+        </a>
       </div>
 
     </div>
 
     <div class="form-group">
-        <label for="usr">Name:</label>
-        <input type="text" class="form-control" id="usr">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Link to your picture:</label>
-        <input type="password" class="form-control" id="pwd">
-        <hr>
-      </div>
+      <label for="usr"><h4>Name:</h4></label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="photo"><h4>Link to your picture:</h4></label>
+      <input type="text" class="form-control" id="photo">
+      <hr>
+    </div>
 
     <div class="form-group">
-        <label for="sel1">1Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+      <label for="sel1">1Select list:</label>
+      <select class="form-control" id="q1">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">2Select list:</label>
+      <select class="form-control" id="q2">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">3Select list:</label>
+      <select class="form-control" id="q3">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">4Select list:</label>
+      <select class="form-control" id="q4">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">5Select list:</label>
+      <select class="form-control" id="q5">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">6Select list:</label>
+      <select class="form-control" id="q6">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">7Select list:</label>
+      <select class="form-control" id="q7">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">8Select list:</label>
+      <select class="form-control" id="q8">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">9Select list:</label>
+      <select class="form-control" id="q9">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">10Select list:</label>
+      <select class="form-control" id="q10">
+        <option>select an option</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+
+      </select>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-lg btn-primary" id="submit">
+        <span class="fa fa-plus"></span> Submit</button>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/tables">API Table Link</a> |
+          <a href="/api/waitlist">API Wait List</a> |
+          <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a>
+        </p>
       </div>
+    </footer>
 
-      <div class="form-group">
-        <label for="sel1">2Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
 
-      <div class="form-group">
-        <label for="sel1">3Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
 
-      <div class="form-group">
-        <label for="sel1">4Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="sel1">5Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="sel1">6Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="sel1">7Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="sel1">8Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="sel1">9Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="sel1">10Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-
-        </select>
-      </div>
-
-      <div class="text-center">
-        <a href="#"><button class="btn btn-lg btn-primary"><span class="fa fa-plus"></span> Submit</button></a>
-      </div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" id="testButton" data-toggle="modal" data-target="#exampleModalCenter">
+  </div>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     Launch demo modal
   </button>
+
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+   <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -171,20 +208,45 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
   </div>
 
-    <footer class="footer">
-      <div class="container">
-        <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> | <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
-      </div>
-    </footer>
 
-  </div>
+
+  <script> 
+    $("#submit").on("click", function (event) {
+      event.preventDefault();
+
+      var newFriend = {
+
+        name: $("name").val(),
+        photo: $("photo").val(),
+        score: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10")]
+
+      }
+
+      console.log("question 1 value = " + $("#q1").val());
+      console.log("question 1 value = " + $("#q2").val());
+      console.log("question 1 value = " + $("#q3").val());
+      console.log("question 1 value = " + $("#q4").val());
+      console.log("question 1 value = " + $("#q5").val());
+      console.log("question 1 value = " + $("#q6").val());
+      console.log("question 1 value = " + $("#q7").val());
+      console.log("question 1 value = " + $("#q8").val());
+      console.log("question 1 value = " + $("#q9").val());
+      console.log("question 1 value = " + $("#q10").val());
+      console.log("Name = " + $("#name").val());
+      console.log("Photo + " + $("#photo").val())
+      // console.log($(friends.name[3]));
+
+
+    });
+
+  </script>
 
 
 </body>
+
 </html>
