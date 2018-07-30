@@ -50,4 +50,6 @@ var friends = [
         "scores": [1, 2, 4, 5, 5, 4, 1, 1, 5, 1]
     },
 ]
+
+module.exports = friends;
 //array of objects
