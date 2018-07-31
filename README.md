@@ -8,8 +8,9 @@
 https://fierce-taiga-32961.herokuapp.com/
 
 <h4>Side Note</h4> 
-* Logic is not finished still working on this at the moment.
-* Modal is not added to the submit button at the moment.
+ Logic is not finished still working on this at the moment.
+ <br>
+ Modal is not added to the submit button at the moment.
 
 
 
