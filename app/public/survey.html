@@ -8,6 +8,8 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
 
@@ -211,7 +213,8 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <h1 id="Name"></h1>
+          <img src="" id="matchImg" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -221,8 +224,7 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+
   <script> 
     $("#submit").on("click", function (event) {
       event.preventDefault();
@@ -242,14 +244,14 @@
 
       }).then(function (response) {
         console.log(response);
+        $("#matchImg").attr("src", response.photo)
+        $("#Name").html(response.name);
+        $("#exampleModal").modal({ show: true});
       });
 
       // var bestfriend = "";
       // var lowdif = 0;
 
-      function getsum(total, num) {
-        return total + num;
-      }
       // // using reduce() to find sum of the array
       // function work(item) {
       //   document.getElementById("totalScore").innerHTML = score.reduce(getsum);

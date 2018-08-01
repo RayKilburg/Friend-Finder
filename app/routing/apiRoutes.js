@@ -25,6 +25,7 @@ module.exports = function(app){
 
         for(var i = 0; i < friends.length; i++){
             var oldFriendScore = friends[i].scores.reduce(getsum)
+            // math abs() returns the absolute value of a number
             var difference = Math.abs(parseInt(newFriendScore) - parseInt(oldFriendScore))
            if(difference < lowestScore){
                lowestScore = difference;
@@ -32,7 +33,10 @@ module.exports = function(app){
            }
             
         }
+
         console.log(bestMatch)
+
+        res.json(bestMatch);
 
         function getsum(total, num) {
             return total + num;
