@@ -11,6 +11,31 @@ module.exports = function(app){
 
     // post request
     app.post("/api/friends", function(req, res){
-        friends.push(req.body);
+
+        console.log(req.body)
+        var newFriendScore; 
+        var parsetFriendScore = [];
+        var bestMatch ;
+        var lowestScore = 100;
+        for(var i = 0; i < req.body.score.length; i++){
+            parsetFriendScore.push(parseInt(req.body.score[i]))
+        }
+        newFriendScore = parsetFriendScore.reduce(getsum)
+        console.log(newFriendScore)
+
+        for(var i = 0; i < friends.length; i++){
+            var oldFriendScore = friends[i].scores.reduce(getsum)
+            var difference = Math.abs(parseInt(newFriendScore) - parseInt(oldFriendScore))
+           if(difference < lowestScore){
+               lowestScore = difference;
+               bestMatch = friends[i];
+           }
+            
+        }
+        console.log(bestMatch)
+
+        function getsum(total, num) {
+            return total + num;
+          }
     });
 };
